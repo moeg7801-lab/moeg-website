@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+	<head>
+		<title>Reggae Rhythm</title>
+
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Facebook Open Graph Meta Tags -->
+<meta property="og:title" content="<span style="visibility:hidden">Moeg</span>">
+<meta property="og:description" content="Listen to Moeg, a fusion of Reggae Rhythm.">
+<meta property="og:image" content="https://moegmusic.weebly.com/uploads/moeg-when-stars-align-album-cover_orig.png">
+<meta property="og:url" content="https://moegmusic.weebly.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Reggae Rhythm Artist Moeg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<span style="visibility:hidden">Moeg</span>">
+<meta name="twitter:description" content="Listen to Moeg, a fusion of Reggae Rhythm.">
+<meta name="twitter:image" content="https://moegmusic.weebly.com/uploads/moeg-when-stars-align-album-cover_orig.png">
+<!-- favicon -->
+	<link rel="icon" href="uploads/Favicon/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="uploads/Favicon/apple-touch-icon.png">
+<!-- Primary Meta Tags -->
+<meta name="title" content="<span style="visibility:hidden">Moeg</span>">
+<meta name="description" content="Listen to Moeg, a fusion of Reggae Rhythm.">
+
+<!-- Keywords (not used heavily by Google but helpful for some engines) -->
+<meta name="keywords" content="Moeg, Moeg music, reggae rock, reggae fusion, reggae rhythm, fusion reggae, reggae rock artist, reggae musician Moeg, reggae rock band Moeg, Listen to Moeg, reggae fusion songs, island vibes reggae, reggae rock tracks, reggae inspired music, reggae groove, reggae rock playlist
+">
+
+<!-- Robots -->
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            background-color: #fdfbf7; /* Off-white paper color */
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+			color: rgb(30 41 59 / var(--tw-text-opacity, 1)) !important;
+        }
+		
+		p, h1, h2, h3, h4, .paragraph, .tracking-widest, .tracking-wide, .text-sm {
+		letter-spacing:0px !important;
+			word-spacing:0px !important;
+		
+		}
+
+        /* Parallax Engine */
+        .parallax-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none; /* Let clicks pass through to content */
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            will-change: transform;
+        }
+
+        /* SVG Specific Styling */
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Content Styling */
+        .content-wrapper {
+            position: relative;
+            z-index: 10; /* Above the parallax background */
+            min-height: 300vh; /* Make page scrollable */
+        }
+
+        .spacer {
+            height: 100vh; /* First screen is just visuals */
+        }
+
+        /* Custom Wave Divider Style */
+        .wave-divider {
+            width: 1500px !important;
+            height: auto; 
+            min-height: 50px;
+            display: block;
+            position: relative;
+            z-index: 9;
+        }
+		
+	
+
+        /* Updated Content Section: Less Square, More Organic */
+        .content-section {
+            background: rgba(253, 251, 247, 0.95);
+            backdrop-filter: blur(10px);
+            /* Responsive padding */
+            padding: 3rem 1.5rem; 
+            max-width: 1500px;
+            margin: 0 auto 8rem auto; /* More spacing between sections */
+            /* Responsive radius */
+            border-radius: 30px; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            position: relative;
+            overflow: visible; /* Allow decorative blobs to overflow */
+        }
+		
+		/* mobile styles - devices 768px width and smaller */
+		@media (max-width: 768px) {
+    #mobile-menu-btn {
+        display: none;
+    }
+	.wave-divider {
+			width:100% !important;
+			}
+			.layer {
+			position:fixed !important;
+			}
+			.content-section {
+			width:100% !important;
+			}
+			
+			.palms {
+			width:100% !important;
+			}
+			.organic-shape {
+			display:none !important;
+			}
+}
+
+		
+		/* mobile styles */
+        @media (min-width: 768px) {
+            .content-section {
+                padding: 5rem 3rem;
+                border-radius: 50px;
+            }
+			.wave-divider {
+			width:100%;
+			}
+			h2 {
+			font-size:none;
+			}
+        } /* end of mobile */
+
+        .content-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Style for the Music Section (to show wave contrast) */
+        #music {
+            background-color: #ffffff;
+        }
+
+        /* Decorative Overflow Shapes attached to content */
+        .organic-shape {
+            position: absolute;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.6;
+            mix-blend-mode: multiply;
+        }
+
+        /* Watercolor Texture Class */
+        .watercolor-texture {
+            mix-blend-mode: multiply;
+        }
+
+        /* Abstract Shape Overflow Background */
+        .overflow-shape {
+            position: absolute;
+            z-index: 1;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            transition: background 0.3s;
+        }
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Audio Player Styling */
+        .track-row {
+            transition: all 0.2s;
+            border-radius: 12px;
+        }
+        .track-row:hover {
+            background: rgba(45, 212, 191, 0.1);
+            transform: scale(1.01);
+        }
+        .track-row.playing {
+            background: rgba(45, 212, 191, 0.2);
+            box-shadow: 0 0 15px rgba(45, 212, 191, 0.2);
+        }
+
+        /* Social Icon Styling */
+        .social-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke-width: 1.5; /* Slightly thinner stroke for elegance */
+        }
+        
+        /* Smooth Scroll Helper */
+        html {
+            scroll-behavior: smooth;
+        }
+		
+		/* footer */
+		.wsite-footer {
+		    max-width:100% !important;
+		}
+
+        /* Mobile Menu Transitions */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-open {
+            overflow: hidden;
+        }
+    </style>
+
+		<!-- webmaster tools - https://search.google.com/search-console?utm_source=about-page&resource_id=sc-domain:canyonspringsgolf.com -->
+<meta name="google-site-verification" content="JqmIsVJmSFByv3QfuNGX_VFv3gJeyqQjXBoA72hmSo8" />
+
+<style>
+.simple-table td.cell {background: none !important;}
+.simple-table {border: solid #000000 0px !important;}
+
+.banner .wsite-multicol:hover {background:#252525;}
+
+.callout-box--material {border-radius: 30px;}
+
+span.follow-moeg {
+  --color: #fff;
+  --shadow-stroke: 2px;
+  --shadow-stroke-gap: 3;
+  --shadow-rotate: -45deg;
+  --shadow-color: #aaa;
+  
+  position: relative;
+  color: transparent;
+  font-size: 100px;
+  text-align: center;
+  line-height: 160px;
+  font-family: "DM Serif Text", serif;
+  background: repeating-linear-gradient(
+      var(--shadow-rotate),
+      var(--shadow-color),
+      var(--shadow-color) var(--shadow-stroke),
+      transparent var(--shadow-stroke),
+      transparent calc(var(--shadow-stroke) * var(--shadow-stroke-gap))
+    );
+   
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 10px;
+}
+
+span.follow-moeg::before {
+  content: "FOLLOW/STREAM";
+  position: absolute;
+  color: transparent;
+  background: var(--color);
+  -webkit-text-stroke: 10px;
+  left: -10px;
+  top: -10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+</style>
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/sites.css?buildtime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/old/fancybox.css?buildtime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="main_style.css" title="wsite-theme-css" />
+<link href='http://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+
+<link href='http://cdn2.editmysite.com/fonts/Playfair_Display/font.css?2' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Playfair Display" !important;letter-spacing: 0px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {color:#2a2a2a !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {text-transform:  uppercase !important;letter-spacing: 4px !important;}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:16px !important;line-height:20px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:50px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {font-size:35px !important;}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<link rel="stylesheet" type="text/css" href="https://cdn2.editmysite.com/fonts/Open_Sans/font.css?2" />
+<style>
+	@font-face {
+		font-family: 'wicons';
+		src: url(//cdn2.editmysite.com/fonts/wIcons/wicons.eot?buildTime=1234);
+		src: url(//cdn2.editmysite.com/fonts/wIcons/wicons.eot?buildTime=1234#iefix) format('embedded-opentype'),
+				 url(//cdn2.editmysite.com/fonts/wIcons/wicons.woff?buildTime=1234) format('woff'),
+				 url(//cdn2.editmysite.com/fonts/wIcons/wicons.ttf?buildTime=1234) format('truetype'),
+				 url(//cdn2.editmysite.com/fonts/wIcons/wicons.svg?buildTime=1234#wicons) format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	/* Hack to smooth out font rendering on Chrome for Windows */
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		@font-face {
+			font-family: 'wicons';
+			src: url(//cdn2.editmysite.com/fonts/wIcons/wicons.svg?buildTime=1234#wicons) format('svg');
+		}
+	}
+
+	@font-face {
+		font-family: 'wsocial';
+		src: url(//cdn2.editmysite.com/fonts/wSocial/wsocial.eot?buildTime=1234);
+		src: url(//cdn2.editmysite.com/fonts/wSocial/wsocial.eot?buildTime=1234#iefix) format('embedded-opentype'),
+				 url(//cdn2.editmysite.com/fonts/wSocial/wsocial.woff?buildTime=1234) format('woff'),
+				 url(//cdn2.editmysite.com/fonts/wSocial/wsocial.ttf?buildTime=1234) format('truetype'),
+				 url(//cdn2.editmysite.com/fonts/wSocial/wsocial.svg?buildTime=1234#wsocial) format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	/* Hack to smooth out font rendering on Chrome for Windows */
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		@font-face {
+			font-family: 'wsocial';
+			src: url(//cdn2.editmysite.com/fonts/wSocial/wsocial.svg?buildTime=1234#wsocial) format('svg');
+		}
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/site_membership.css?buildtime=1234">
+
+		<script src='files/templateArtifacts.js?1766211403'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn11.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn11.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "131375831552009135";
+			com_userID = "2687562";</script><script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script type="text/javascript">
+								_W = window._W || {};
+								_W.allowMemberRegistration = false;
+								_W.showLogin = false;
+							</script><script type="text/javascript">
+					function initMembershipModels() {
+						(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/Membership\/","actions":{"Member":[{"name":"getRedirectUrl","len":1,"multiple":false,"standalone":false},{"name":"getOriginUrl","len":0,"multiple":false,"standalone":false},{"name":"getSecureMemberUrl","len":0,"multiple":false,"standalone":false},{"name":"validate_user","len":2,"multiple":false,"standalone":false},{"name":"get_account_information","len":0,"multiple":false,"standalone":false},{"name":"get_session_details","len":0,"multiple":false,"standalone":false},{"name":"register_member","len":5,"multiple":false,"standalone":false},{"name":"validate_session","len":1,"multiple":false,"standalone":false},{"name":"set_password","len":3,"multiple":false,"standalone":false},{"name":"send_reset_password_email","len":1,"multiple":false,"standalone":false},{"name":"create","len":1,"multiple":false,"standalone":false},{"name":"readOne","len":1,"multiple":false,"standalone":false},{"name":"readMany","len":1,"multiple":false,"standalone":false},{"name":"update","len":1,"multiple":false,"standalone":false},{"name":"patch","len":1,"multiple":false,"standalone":false},{"name":"destroy","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.Membership.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.Membership.RPC","model_namespace":"_W.Membership.BackboneModelData","collection_namespace":"_W.Membership.BackboneCollectionData","bootstrap_namespace":"_W.Membership.BackboneBootstrap","models":{"Member":{"_class":"Membership.Model.Member","defaults":{"class_name":null,"name":null,"email":"","access_token":null,"token_expiry_date":null,"last_ip":null,"last_login":null,"approved":false,"password_set":null,"group_ids":null,"page_ids":null,"group_page_ids":null,"owner_id":"","site_id":"","updated_date":0,"created_date":0},"validation":{"class_name":null,"site_member_id":null,"name":null,"email":{"email":null,"required":true},"access_token":null,"token_expiry_date":null,"last_ip":null,"last_login":null,"approved":null,"password_set":null,"group_ids":null,"page_ids":null,"group_page_ids":null,"owner_id":{"required":true},"site_id":{"required":true},"updated_date":null,"created_date":null},"types":{"class_name":null,"site_member_id":"string","name":"string","email":"string","access_token":"string","token_expiry_date":"int","last_ip":"string","last_login":"int","approved":"boolean","password_set":"boolean","group_ids":"json","page_ids":"json","group_page_ids":"json","owner_id":"string","site_id":"string","updated_date":"int","created_date":"int"},"idAttribute":"site_member_id","keydefs":{"PRIMARY":["owner_id","site_id","site_member_id"],"idx_owner_site_account":["owner_id","site_id","site_account_id"]}}},"collections":{"Member":{"_class":"Membership.Collection.Member"}},"bootstrap":[]});
+})();
+					}
+					if(document.createEvent && document.addEventListener) {
+						var initEvt = document.createEvent('Event');
+						initEvt.initEvent('membershipModelsInitialized', true, false);
+						document.dispatchEvent(initEvt);
+					} else if(document.documentElement.initMembershipModels === 0){
+						document.documentElement.initMembershipModels++
+					}
+					</script><script src='http://cdn11.editmysite.com/js/site/main-membership-site.js?buildtime=1234'></script>
+<script type="text/javascript">_W.configDomain = "";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"218365463650632307","title":"Profile","url":"profile.html","target":"","nav_menu":false,"nonclickable":false},{"id":"235941887652420906","title":"Moeg","url":"moeg.html","target":"","nav_menu":false,"nonclickable":false},{"id":"897999672552578916","title":"Buy","url":"buy.html","target":"","nav_menu":false,"nonclickable":false},{"id":"409648072460886258","title":"Breathe","url":"breathe.html","target":"","nav_menu":false,"nonclickable":false}],
+			"838406090825251779",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class=" wsite-page-index  full-width-body-off header-overlay-on alt-nav-off  wsite-theme-light"><!-- Navigation -->
+    <nav class="flex justify-between items-center px-6 md:px-8 py-6 text-slate-800" id="navbar">
+        <div class="text-2xl font-bold serif tracking-wider z-50"><span class="wsite-logo">
+
+	
+	<span class="wsite-title-placeholder">&nbsp;</span><span style="display:none">
+	<span style="display:none">Moeg</span>
+	</span>
+	
+
+</span>
+            <!-- moeg logo -->
+            <img width="120px" class="md:w-[150px]" src="uploads/Moeg_Color_Shadow-Logo-300px.png" alt="Moeg Logo">
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-sm font-light tracking-widest uppercase z-50">
+            <a href="#music" class="hover:text-teal-600 transition">Music</a>
+            <a href="#shop" class="hover:text-teal-600 transition">Shop</a>
+			<a href="#social" class="hover:text-teal-600 transition">Social</a>
+            <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-2xl z-50 p-2 focus:outline-none" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <!-- Mobile Full Screen Menu Overlay -->
+        <!-- FIX: Added opacity-100 and isolate to ensure the white background is fully opaque and creates a clean stacking context above all background elements. -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white opacity-100 z-[60] isolate transform translate-x-full flex flex-col items-center justify-center space-y-8 text-2xl serif">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-4xl text-slate-800 p-2" aria-label="Close Menu">&times;</button>
+            <a href="#music" class="mobile-link hover:text-teal-600 transition">Music</a>
+            <a href="#shop" class="mobile-link hover:text-teal-600 transition">Shop</a>
+			<a href="#social" class="mobile-link hover:text-teal-600 transition">Social</a>
+            <a href="#contact" class="mobile-link hover:text-teal-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Parallax Background System -->
+    <div class="parallax-container">
+        
+        <!-- Layer 0: Sky Gradient -->
+        <div class="layer" style="background: linear-gradient(to bottom, #e0f2fe 0%, #fffbeb 100%);"></div>
+
+        <!-- Layer 1: Abstract Floating Shapes (Deep Background) -->
+        <div class="layer" data-speed="0.05">
+            <!-- very bottom shrub -->
+           <img src="uploads/hawaii-plants-top.png" alt="one bottom shrubs" style="position: absolute; bottom: 0; top:170px; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center bottom;">
+        
+            <!-- Light Yellow Overflowing Shape Top right -->
+            <svg class="overflow-shape" style="top: 20%; left: -15%; width: 60vw; height: 60vh;" viewBox="0 0 200 200">
+                <path d="M38.1,-63.9C49.3,-54.6,58.3,-43.3,65.4,-30.8C72.5,-18.3,77.7,-4.6,76.1,8.3C74.5,21.2,66.1,33.3,56.1,43.2C46.1,53.1,34.5,60.8,22.1,65.2C9.7,69.6,-3.5,70.7,-15.8,67.6C-28.1,64.5,-39.5,57.2,-49.8,47.7C-60.1,38.2,-69.3,26.5,-73.4,12.9C-77.5,-0.7,-76.5,-16.2,-68.8,-28.9C-61.1,-41.6,-46.7,-51.5,-33.2,-59.5C-19.7,-67.5,-7.1,-73.6,4.1,-80C15.3,-86.4,30.6,-93.1,38.1,-63.9Z" transform="translate(100 100)" fill="#fffacd" opacity="0.5" />
+            </svg>
+        </div>
+
+        <!-- Layer 2: birds -->
+        <div class="layer" data-speed="0.1">
+            <img src="uploads/hawaii-birds.png" alt="birds" style="position: absolute; bottom: 0; top:75px; right: 80px; width: 150px; object-fit: cover; object-position: center bottom;">
+        </div>
+
+        <!-- Layer 3: Distant Mountains -->
+        <div class="layer" data-speed="0.2">
+             <img src="uploads/hawaii-mountains-2.png" alt="Distant Mountains" style="position: absolute; bottom: 100px; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center bottom;">
+        </div>
+
+        <!-- Layer 5: Beach and Ocean -->
+        <div class="layer" data-speed="0.3">
+            <img src="uploads/hawaii-beach-noSun.png" alt="Watercolor Ocean and Beach" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: bottom; opacity: 1; mix-blend-mode: normal;" />
+        </div>
+
+        <!-- Layer 6: Shrubs -->
+        <div class="layer" data-speed="0.5">
+           <img src="uploads/hawaii-plants-round.png" alt="shrubs" style="position: absolute; top: 500px; left: 0; width: 100%; height: 100%; object-position: center bottom;">
+        </div>
+
+        <!-- Layer 7: Palm Trees (Foreground - Darkest) -->
+        <div class="layer palms" data-speed="0.8">
+            <div style="position: relative; width: 100%; height: 100%;">
+                <!-- Left palm tree Image - Responsive -->
+                <img 
+                    src="uploads/hawaii-palm-tree.png" 
+                    alt="Left Palm Tree" 
+                    style="
+                        position: absolute;
+                        pointer-events: none;
+                        left: -5%;
+                        bottom: 0px;
+                        top: 400px;
+                        width: 60%;
+                        max-width: 900px;
+                        min-width: 300px;
+                        object-fit: contain;
+                    "
+                >
+
+                <!-- Right palm tree Image - Responsive -->
+                <img 
+                    src="uploads/hawaii-palm-tree-withGrass.png" 
+                    alt="Right Palm Tree" 
+                    style="
+                        position: absolute;
+                        pointer-events: none;
+                        right: -5%;
+                        bottom: 0px;
+                        top: 250px;
+                        width: 50%;
+                        max-width: 800px;
+                        min-width: 250px;
+                        object-fit: contain;
+                    "
+                >
+            </div>
+        </div>
+
+        <!-- Layer 8: Text Hero (Visual Only) -->
+        <div class="layer flex items-center justify-center" data-speed="0.4">
+            <div class="text-center px-4" style="text-align:center">
+                <img src="uploads/moeg-circle-logo.png" style="margin:auto; width:150px; height: auto;">
+                <p class="mt-4 text-lg md:text-2xl font-light tracking-widest text-slate-700 uppercase mix-blend-multiply">
+                    A fusion of reggae rhythm
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="content-wrapper">
+        <div class="spacer"></div> <!-- Transparent area to see the hero -->
+		
+		
+		<!-- Wave Divider before music Section -->
+        <svg class="wave-divider" viewBox="0 0 1440 120" preserveAspectRatio="none" style="fill: #fdfbf7; margin: 0 auto;">
+             <path d="M 0 121 C 360 0 720 120 1440 119 L 1440 120 L 0 120 Z"></path>
+        </svg>
+
+        <!-- Music Section -->
+        <div class="content-section" id="music" style="margin-bottom:0px !important; border-radius:0px;">
+             <!-- Decorative Overflow Blob Right -->
+            <svg class="organic-shape" style="bottom: -80px; right: -80px; width: 400px; height: 400px; transform: rotate(45deg);" viewBox="0 0 200 200">
+                <path fill="#ffe4e1" d="M45.7,-76.3C58.9,-69.3,69.1,-55.6,76.3,-41.2C83.5,-26.9,87.6,-11.8,85.6,2.4C83.6,16.6,75.4,30,65.7,41.2C56,52.4,44.7,61.5,32.3,68.2C19.9,74.9,6.3,79.2,-6.4,78.1C-19.1,77,-31.1,70.5,-41.7,62.1C-52.3,53.7,-61.5,43.3,-68.6,31.3C-75.7,19.3,-80.7,5.7,-78.7,-7.1C-76.7,-19.9,-67.7,-31.9,-57.3,-41.6C-46.9,-51.3,-35.1,-58.7,-23.2,-64.1C-11.3,-69.5,-0.7,-72.9,12.3,-75.1Z" />
+            </svg>
+			<!-- weebly music section -->
+			<div class='wsite-elements wsite-not-footer'>
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:36.725380680576%; padding:0 15px;">
+					
+						
+
+<div><div id="260101754531052364" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><p><font color="#f472b6">NEW RELEASE</font></p></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title">When Stars Align</h2>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/moeg-when-stars-align-album-cover_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph">We all have bad days and bad years, but when the stars align to give us a good day, good year, it's out of this world.</div>
+
+<div><div id="878385951420558291" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><button id="spotify-btn" class="w-full md:w-auto px-8 py-3 bg-slate-800 text-white font-bold tracking-widest uppercase hover:bg-teal-700 transition duration-300 rounded-full"><a href="https://open.spotify.com/track/5U4GdwCsYZwZFx5LHFzqrD?si=a2bc9caca59a49da" target="_blank">Listen on Spotify</a></button></div>
+
+
+
+</div>
+
+<div><div style="height: 40px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 40px; overflow: hidden; width: 100%;"></div></div>
+
+<div><div id="666881208305851415" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><p><font color="#f472b6">FEATURED VIDEO</font></p></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title">Sun Crusier</h2>
+
+<div class="paragraph">Relax a soothing beat of acoustic reggae melody with a beach vibe.</div>
+
+<div class="wsite-youtube" style="margin-bottom:10px;margin-top:10px;"><div class="wsite-youtube-wrapper wsite-youtube-size-auto wsite-youtube-align-center">
+<div class="wsite-youtube-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3RwyPDQPf48?si=z6Tkpmhf-QwkkYM7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div></div>
+
+<div class="wsite-spacer" style="height:30px;"></div>
+
+<div class="paragraph"><a href="https://www.youtube.com/@MoegMusic7801/videos" target="_blank">Watch more Music Videos</a></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:13.186435897908%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50.088183421517%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:75px;"></div>
+
+<div><div id="576667457163621776" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><p><font color="#0d9488">THE TRACKS</font></p></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title">Listen to Moeg</h2>
+
+<div><div id="722058159667634883" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><p>Listen to all the Moeg tracks in their unique form they offer.</p></div>
+
+
+
+</div>
+
+<div><div id="566649790758016651" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><!-- music player -->
+                <div class="md:col-span-8 bg-white/50 rounded-3xl p-6 md:p-8 backdrop-blur-sm border border-white/60 shadow-sm">
+                    <div class="space-y-4" id="track-list">
+                        <!-- Track -->
+<a href="https://open.spotify.com/track/5U4GdwCsYZwZFx5LHFzqrD?si=95ab1a4d1e144924" target="_blank">                        
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="1" data-note="C4" data-duration="2">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">When Stars Align</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">1:55</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2025</span>
+                        </div></a>
+
+                        <!-- Track -->
+                        <a href="https://open.spotify.com/track/5MbklkCexfshSMJpTu6nva?si=088a9e0c3e604549" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="2" data-note="E4" data-duration="3">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Summer of Friends</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:53 • Feat: Ricardo Escavante</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2025</span>
+                        </div></a>
+
+                         <!-- Track -->
+                         <a href="https://open.spotify.com/track/1R9goP5D3hjGCxw0Sv24Gx?si=4a24698e68e5467f" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Hanaeli Dream</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:43 • Feat: Matt Walsh</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2025</span>
+                        </div></a>
+
+ <!-- Track -->
+                         <a href="https://open.spotify.com/track/1ubKSYlEnb31J3t7RwFBat?si=b8e7109c170f4d21" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Sun Crusier</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">3:11</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2025</span>
+                        </div></a>
+
+<!-- Track -->
+                         <a href="https://open.spotify.com/track/6HegoGNon6ltEpsR8cDVDT?si=0c278436a64147a0" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">People of the Sun</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">6:11</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2025</span>
+                        </div></a>
+
+<!-- Track -->
+                         <a href="https://open.spotify.com/track/4MZPYCQmRkBilRyrsCI3oZ?si=fc342fbc397b43fc" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Run, Run, Run!</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:55</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2025</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/5XEP6ZhN8Aw40jiP0cEHY3?si=163157274010439a" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">We Are All Misunderstood</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:18</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                         <!-- Track -->
+                         <a href="https://open.spotify.com/track/3Y3SXWdDIcZ3y2e7JBl1XN?si=90ce175743ae4f29" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">High and Low Ballard (Acoustic)</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">1:23</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/3TAj6EzeZhE5TEgzVSuzBp?si=f083a218e9504964" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Somethings You Just Don't Know</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:24</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/5nb05Wte7pUryMsQ5vi6Ty?si=89499c93a0d248b1" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Don't Dwell on it</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:14</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                         <!-- Track -->
+                         <a href="https://open.spotify.com/track/4f33g35GRdtlscWrekbBaU?si=946579b6bd1b406a" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Let's go to the Beach</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:29</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/5vPbzi7tH5ZjFgUfHW2W3x?si=96be79bebcb542dd" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Breathe out the Hate</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">3:48</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/4rijCgIGyQl5RPZQEAhMme?si=3109fdf6b8e04788" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Party Mode</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:41</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2024</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/41oJizt3HXVv22TwgmJeuu?si=19b205e606ec4a94" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Sunset Chasing</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">2:34</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2023</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/2p9A86Q8kVQadr6vDcC2KR?si=1e9f1e6a44654423" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Sucka</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">1:21</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2023</span>
+                        </div></a><!-- end of track -->
+                        
+                        <!-- Track -->
+                         <a href="https://open.spotify.com/track/44F7dYhXHygjO2rgRIzhUp?si=7ec159e6f6bb45cf" target="_blank">
+<div class="track-row flex items-center p-3 cursor-pointer group" data-track-id="3" data-note="G4" data-duration="4">
+                            <div class="play-btn w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center mr-4 group-hover:bg-teal-500 transition flex-shrink-0">
+                                <span class="play-icon text-slate-500 group-hover:text-white text-lg">▶</span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-700 truncate">Hideout</h4>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">1:49 • Feat: Holly+</span>
+                            </div>
+                            <span class="text-slate-400 font-mono text-sm ml-2">2023</span>
+                        </div></a><!-- end of track -->
+                    </div>
+                </div></div>
+
+
+
+</div>
+
+<div><div id="966485313330508854" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><button id="spotify-btn" class="w-full md:w-auto px-8 py-3 bg-slate-800 text-white font-bold tracking-widest uppercase hover:bg-teal-700 transition duration-300 rounded-full" style="
+    border: #1e293b solid 1px;
+    color: #1e293b !important;
+    background-color: #fff !important;
+"><a href="https://open.spotify.com/artist/4v2xeKnnwYLL3XjsgqGgSh?si=mbcGdV60RRinJyRTfum9Tw" target="_blank">Follow on Spotify</a></button></div>
+
+
+
+</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div></div>
+        </div>
+		
+		<!-- Wave Divider after Music Section -->
+        <svg class="wave-divider" viewBox="0 0 1440 120" preserveAspectRatio="none" style="fill: #fdfbf7; transform: scaleY(-1); width:100%; height:auto; margin:0 auto;">
+             <path d="M 3 117 C 360 0 685 63 1132 62 C 1203.6667 66.3333 1275.3333 70.6667 1441 117 L 1440 120 L 0 120 Z"></path>
+        </svg>
+		
+		
+
+      <!-- Wave Divider before Merch Section -->
+        <svg class="wave-divider" viewBox="0 0 1440 120" preserveAspectRatio="none" style="fill: #fdfbf7; margin: 0 auto; z-index:-10 !important;">
+             <path d="M 0 121 C 360 0 720 120 1440 119 L 1440 120 L 0 120 Z"></path>
+        </svg>
+		<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-55" style="height: auto;background-color: transparent;background-image: none;is_customized: ;" >
+		<div class="wsite-section-content">
+
+        <!-- Merch Section -->
+        <div class="content-section" id="shop" style="margin-bottom:0px !important; border-radius:0px;">
+		<!-- Decorative Overflow Blob -->
+            <svg class="organic-shape" style="top: -60px; left: -60px; width: 300px; height: 300px; transform: rotate(-10deg);" viewBox="0 0 200 200">
+                 <path fill="#f3e5ab" d="M38.1,-52.1C49.3,-44.6,58.3,-33.3,65.4,-20.8C72.5,-8.3,77.7,5.4,76.1,18.3C74.5,31.2,66.1,43.3,56.1,53.2C46.1,63.1,34.5,70.8,22.1,75.2C9.7,79.6,-3.5,80.7,-15.8,77.6C-28.1,74.5,-39.5,67.2,-49.8,57.7C-60.1,48.2,-69.3,36.5,-73.4,22.9C-77.5,9.3,-76.5,-6.2,-68.8,-18.9C-61.1,-31.6,-46.7,-41.5,-33.2,-59.5C-19.7,-67.5,-7.1,-73.6,4.1,-80C15.3,-86.4,30.6,-93.1,38.1,-52.1Z" />
+            </svg>
+             <!-- Decorative Overflow Blob Right -->
+            <svg class="organic-shape" style="bottom: -80px; right: -80px; width: 400px; height: 400px; transform: rotate(45deg);" viewBox="0 0 200 200">
+                <path fill="#ffe4e1" d="M45.7,-76.3C58.9,-69.3,69.1,-55.6,76.3,-41.2C83.5,-26.9,87.6,-11.8,85.6,2.4C83.6,16.6,75.4,30,65.7,41.2C56,52.4,44.7,61.5,32.3,68.2C19.9,74.9,6.3,79.2,-6.4,78.1C-19.1,77,-31.1,70.5,-41.7,62.1C-52.3,53.7,-61.5,43.3,-68.6,31.3C-75.7,19.3,-80.7,5.7,-78.7,-7.1C-76.7,-19.9,-67.7,-31.9,-57.3,-41.6C-46.9,-51.3,-35.1,-58.7,-23.2,-64.1C-11.3,-69.5,-0.7,-72.9,12.3,-75.1Z" />
+            </svg>
+			<!-- weebly Merch section -->
+			
+			<div class="wsite-section-elements">
+				<div><div id="631633696718557803" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><p><font color="#0d9488">THE SHOP</font></p></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title" style="text-align:center;">Moeg Merchandise</h2>
+
+<div class="paragraph" style="text-align:center;">We are inviting fans to explore Moeg-branded merchandise.<br /></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div id="773140494295467692" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="application/ld+json">
+
+{
+
+  "@context": "https://schema.org/",
+
+  "@type": "Product",
+
+  "name": "Moeg Beach Logo T-Shirt",
+
+  "description": "Premium cotton T-shirt with a soft feel and durable print.",
+
+  "category": "T-Shirt",
+
+  "image": [
+
+    "https://image.spreadshirtmedia.com/image-server/v1/products/T1197A1PA4695PT17X45Y47D1057554828W21087H21087/views/1,width=500,height=500,appearanceId=1,crop=list,modelId=1970/reggae-rock-artist-moeg-modern-t-mens-5050-t-shirt.jpg"
+
+  ],
+
+  "sku": "TSHIRT-001",
+
+  "brand": {
+
+    "@type": "Brand",
+
+    "name": "Moeg"
+
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "priceCurrency": "USD",
+
+    "price": "24.99",
+
+    "availability": "https://schema.org/InStock",
+
+    "url": "https://moeg.myspreadshop.com/reggae+rock+artist+moeg+modern+t?idea=688288732281f630aaed780d"
+
+  },
+
+  "additionalProperty": [
+
+
+    {
+
+      "@type": "PropertyValue",
+
+      "name": "Sizes",
+
+      "value": "S, M, L, XL, XXL"
+
+    },
+
+  ]
+
+}
+
+</script>
+
+<div class="group cursor-pointer">
+    <div class="h-80 bg-slate-100 rounded-[30px] overflow-hidden mb-4 relative transition transform group-hover:-translate-y-2 duration-300">
+        <a href="https://moeg.myspreadshop.com/reggae+rock+artist+moeg+modern+t?idea=688288732281f630aaed780d" target="_blank">
+            
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300 flex items-center justify-center">
+                <img 
+                    class="w-full h-full object-contain" 
+                    src="https://image.spreadshirtmedia.com/image-server/v1/products/T1197A1PA4695PT17X45Y47D1057554828W21087H21087/views/1,width=500,height=500,appearanceId=1,crop=list,modelId=1970/reggae-rock-artist-moeg-modern-t-mens-5050-t-shirt.jpg" 
+                    alt="Moeg Beach Logo Tshirt"
+                >
+            </div>
+            
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition bg-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">Buy Now</button>
+        </a> 
+    </div>
+    <div class="text-center">
+        <h3 class="font-bold text-slate-800">Moeg Beach Edition T-Shirt</h3>
+        <p class="text-slate-500 text-sm">$25+</p>
+    </div>
+</div></div>
+
+
+
+</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div id="598931549234023142" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="application/ld+json">
+
+{
+
+  "@context": "https://schema.org/",
+
+  "@type": "Product",
+
+  "name": "Moeg Classic Logo Hat",
+
+  "description": "Snapback baseball cap.",
+
+  "category": "Hat",
+
+  "image": [
+
+    "https://image.spreadshirtmedia.com/image-server/v1/products/T803A1PA1648PT32X46Y4D1057554472W3560H3560/views/1,width=500,height=500,appearanceId=1,crop=list,modelId=10475/reggae-rock-artist-moeg-circle-t-snapback-baseball-cap.jpg"
+
+  ],
+
+  "sku": "HAT-001",
+
+  "brand": {
+
+    "@type": "Brand",
+
+    "name": "Moeg"
+
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "priceCurrency": "USD",
+
+    "price": "22.49",
+
+    "availability": "https://schema.org/InStock",
+
+    "url": "https://moeg.myspreadshop.com/reggae+rock+artist+moeg+circle+t?idea=68826fc27b2ccd605a175797"
+
+  },
+
+}
+
+</script>
+
+<div class="group cursor-pointer">
+    <div class="h-80 bg-slate-100 rounded-[30px] overflow-hidden mb-4 relative transition transform group-hover:-translate-y-2 duration-300">
+        <a href="https://moeg.myspreadshop.com/reggae+rock+artist+moeg+circle+t?idea=68826fc27b2ccd605a175797" target="_blank">
+            
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300 flex items-center justify-center">
+                <img 
+                    class="w-full h-full object-contain" 
+                    src="uploads/reggae-rock-artist-moeg-circle-t-snapback-baseball-cap.jpg" 
+                    alt="Moeg Classic Logo Hat"
+                >
+            </div>
+            
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition bg-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">Buy Now</button>
+        </a> 
+    </div>
+    <div class="text-center">
+        <h3 class="font-bold text-slate-800">Moeg Classic Logo Hat</h3>
+        <p class="text-slate-500 text-sm">$22.49</p>
+    </div>
+</div></div>
+
+
+
+</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div id="657338535677456729" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="application/ld+json">
+
+{
+
+  "@context": "https://schema.org/",
+
+  "@type": "Product",
+
+  "name": "Moeg Palm Tree Logo Sticker",
+
+  "description": "Sticker built to be added to our gear.",
+
+  "category": "Sticker",
+
+  "image": [
+
+    "https://image.spreadshirtmedia.com/image-server/v1/products/T1459A839PA3861PT28D1058101555W7585H10000/views/1,width=500,height=500,appearanceId=839/reggae-rock-artist-moeg-palm-surfboard-t-sticker.jpg"
+
+  ],
+
+  "sku": "STICKER-001",
+
+  "brand": {
+
+    "@type": "Brand",
+
+    "name": "Moeg"
+
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "priceCurrency": "USD",
+
+    "price": "2.49",
+
+    "availability": "https://schema.org/InStock",
+
+    "url": "https://moeg.myspreadshop.com/reggae+rock+artist+moeg+palm+surfboard+t?idea=69253d3e3c285b0e6a3a3213"
+
+  },
+
+}
+
+</script>
+
+<div class="group cursor-pointer">
+    <div class="h-80 bg-slate-100 rounded-[30px] overflow-hidden mb-4 relative transition transform group-hover:-translate-y-2 duration-300">
+        <a href="https://moeg.myspreadshop.com/reggae+rock+artist+moeg+palm+surfboard+t?idea=69253d3e3c285b0e6a3a3213" target="_blank">
+            
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300 flex items-center justify-center">
+                <img 
+                    class="w-full h-full object-contain" 
+                    src="uploads/reggae-rock-artist-moeg-palm-surfboard-t-sticker.jpg" 
+                    alt="Moeg Palm Tree Logo Sticker"
+                >
+            </div>
+            
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition bg-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">Buy Now</button>
+        </a> 
+    </div>
+    <div class="text-center">
+        <h3 class="font-bold text-slate-800">Moeg Palm Tree Logo Sticker</h3>
+        <p class="text-slate-500 text-sm">$2.49</p>
+    </div>
+</div></div>
+
+
+
+</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div id="552330742905443109" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="application/ld+json">
+
+{
+
+  "@context": "https://schema.org/",
+
+  "@type": "Product",
+
+  "name": "Moeg Beach Logo Hemp Pouch",
+
+  "description": "Carry pouch for all.",
+
+  "category": "Pouch",
+
+  "image": [
+
+    "https://image.spreadshirtmedia.com/image-server/v1/products/T1442A77PA3821PT32X0Y0D1057554828W14929H14929/views/1,width=500,height=500,appearanceId=77,crop=list,modelId=12107/reggae-rock-artist-moeg-modern-t-hemp-carry-all-pouch.jpg"
+
+  ],
+
+  "sku": "POUCH-001",
+
+  "brand": {
+
+    "@type": "Brand",
+
+    "name": "Moeg"
+
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "priceCurrency": "USD",
+
+    "price": "19.99",
+
+    "availability": "https://schema.org/InStock",
+
+    "url": "https://moeg.myspreadshop.com/reggae+rock+artist+moeg+modern+t?idea=688288732281f630aaed780d"
+
+  },
+
+}
+
+</script>
+
+<div class="group cursor-pointer">
+    <div class="h-80 bg-slate-100 rounded-[30px] overflow-hidden mb-4 relative transition transform group-hover:-translate-y-2 duration-300">
+        <a href="https://moeg.myspreadshop.com/reggae+rock+artist+moeg+modern+t?idea=688288732281f630aaed780d" target="_blank">
+            
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300 flex items-center justify-center">
+                <img 
+                    class="w-full h-full object-contain" 
+                    src="uploads/reggae-rock-artist-moeg-modern-t-hemp-carry-all-pouch.jpg" 
+                    alt="Moeg Beach Logo Pouch"
+                >
+            </div>
+            
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition bg-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">Buy Now</button>
+        </a> 
+    </div>
+    <div class="text-center">
+        <h3 class="font-bold text-slate-800">Moeg Beach Logo Carry Pouch</h3>
+        <p class="text-slate-500 text-sm">$19.99</p>
+    </div>
+</div></div>
+
+
+
+</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div id="201391722975799620" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="application/ld+json">
+
+{
+
+  "@context": "https://schema.org/",
+
+  "@type": "Product",
+
+  "name": "Women's Crewneck Sweater",
+
+  "description": "Comfortable sweater for any weather.",
+
+  "category": "Sweater",
+
+  "image": [
+
+    "https://image.spreadshirtmedia.com/image-server/v1/products/T512A1179PA4049PT17X56Y47D1058101555W18963H25000/views/1,width=500,height=500,appearanceId=1179/reggae-rock-artist-moeg-palm-surfboard-t-unisex-crewneck-sweatshirt.jpg"
+
+  ],
+
+  "sku": "SWEATER-001",
+
+  "brand": {
+
+    "@type": "Brand",
+
+    "name": "Moeg"
+
+  },
+
+  "offers": {
+
+    "@type": "Offer",
+
+    "priceCurrency": "USD",
+
+    "price": "37.99",
+
+    "availability": "https://schema.org/InStock",
+
+    "url": "https://moeg.myspreadshop.com/reggae+rock+artist+moeg+palm+surfboard+t?idea=69253d3e3c285b0e6a3a3213"
+
+  },
+
+}
+
+</script>
+
+<div class="group cursor-pointer">
+    <div class="h-80 bg-slate-100 rounded-[30px] overflow-hidden mb-4 relative transition transform group-hover:-translate-y-2 duration-300">
+        <a href="https://moeg.myspreadshop.com/reggae+rock+artist+moeg+palm+surfboard+t?idea=69253d3e3c285b0e6a3a3213" target="_blank">
+            
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300 flex items-center justify-center">
+                <img 
+                    class="w-full h-full object-contain" 
+                    src="uploads/reggae-rock-artist-moeg-palm-surfboard-t-unisex-crewneck-sweatshirt.jpg" 
+                    alt="Female Crewneck Sweater"
+                >
+            </div>
+            
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition bg-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">Buy Now</button>
+        </a> 
+    </div>
+    <div class="text-center">
+        <h3 class="font-bold text-slate-800">Women's Crewneck Sweater</h3>
+        <p class="text-slate-500 text-sm">$37.99</p>
+    </div>
+</div></div>
+
+
+
+</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+			</div>
+		
+        </div>
+		
+		</div>
+
+	</div>
+</div>
+
+</div>
+
+		<!-- shop anchor -->
+		<span id="social"></span>
+		<!-- Wave Divider after Merch Section -->
+        <svg class="wave-divider" viewBox="0 0 1440 120" preserveAspectRatio="none" style="fill: #fdfbf7; transform: scaleY(-1); width:100%; height:auto; margin:0 auto; z-index:100;">
+             <path d="M 3 117 C 1203.6667 66.3333 1275.3333 70.6667 1441 117 L 1440 120 L 0 120 Z"></path>
+        </svg>
+		
+
+        
+        <!-- Social Media Band (UPDATED WITH ICONS) -->
+        <div class="max-w-4xl mx-auto mb-20 px-4">
+             <div class="relative bg-white/40 backdrop-blur-md rounded-full px-8 py-6 flex flex-col md:flex-row items-center justify-between border border-white/50 shadow-sm">
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <h4 style="font-size:2.25rem">Become a Fan</h4>
+                </div>
+                <div class="flex space-x-6 justify-center md:justify-start">
+                    <!-- Instagram Icon -->
+                    <a href="https://www.instagram.com/moeg7801/" target="_blank" class="social-icon w-12 h-12 rounded-full bg-white flex items-center justify-center text-slate-700 hover:bg-teal-500 hover:text-white transition shadow-sm" aria-label="Instagram">
+                       <svg fill="#000000" width="200px" height="200px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z"/></svg>
+                       </a>
+                    <!-- tiktok Icon -->
+                    <a href="https://www.tiktok.com/@moeg7801" target="_blank" class="social-icon w-12 h-12 rounded-full bg-white flex items-center justify-center text-slate-700 hover:bg-teal-500 hover:text-white transition shadow-sm" aria-label="X / Twitter">
+                        <svg fill="#000000" width="200px" height="200px" viewBox="0 0 24 24" id="tiktok" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path id="primary" d="M21,7H20a4,4,0,0,1-4-4H12V14.5a2.5,2.5,0,1,1-4-2V8.18a6.5,6.5,0,1,0,8,6.32V9.92A8,8,0,0,0,20,11h1Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+                         </a>
+                    <!-- YouTube Icon -->
+                    <a href="https://www.youtube.com/channel/UCfweHMFkzMegYT4iYAtoEqg" target="_blank" class="social-icon w-12 h-12 rounded-full bg-white flex items-center justify-center text-slate-700 hover:bg-teal-500 hover:text-white transition shadow-sm" aria-label="YouTube">
+                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 209.673 209.673" style="enable-background:new 0 0 209.673 209.673;" xml:space="preserve">
+<g>
+	<path d="M173.075,29.203H36.599C16.418,29.203,0,45.626,0,65.812v78.05c0,20.186,16.418,36.608,36.599,36.608h136.477
+		c20.18,0,36.598-16.422,36.598-36.608v-78.05C209.673,45.626,193.255,29.203,173.075,29.203z M194.673,143.861
+		c0,11.915-9.689,21.608-21.598,21.608H36.599c-11.91,0-21.599-9.693-21.599-21.608v-78.05c0-11.915,9.689-21.608,21.599-21.608
+		h136.477c11.909,0,21.598,9.693,21.598,21.608V143.861z"/>
+	<path d="M145.095,98.57L89.499,61.92c-2.303-1.519-5.254-1.649-7.684-0.342c-2.429,1.308-3.944,3.845-3.944,6.604v73.309
+		c0,2.759,1.515,5.295,3.944,6.604c1.113,0.6,2.336,0.896,3.555,0.896c1.442,0,2.881-0.415,4.129-1.239l55.596-36.659
+		c2.105-1.388,3.372-3.74,3.372-6.262C148.467,102.31,147.2,99.958,145.095,98.57z M92.871,127.562V82.109l34.471,22.723
+		L92.871,127.562z"/>
+</g>
+</svg>
+                       </a>
+                </div>
+             </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="content-section bg-teal-900 text-white" id="contact" style="margin-bottom: 0; background-color: #111827; border-radius: 40px 40px 0 0; max-width:100%">
+             <!-- Decorative Overflow Blob Top Left -->
+             <svg class="organic-shape" style="top: -50px; left: 10%; width: 200px; height: 100px;" viewBox="0 0 200 100">
+                <path fill="#111827" d="M0,100 L200,100 C150,0 50,0 0,100 Z" />
+            </svg>
+			
+			<!-- weebly footer -->
+			<div class='wsite-elements wsite-footer'>
+<div><div id="261243776247701193" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<style>
+@import "https://unpkg.com/open-props" layer(design.system);
+
+@layer demo {
+  fieldset {
+    grid-template-columns: repeat(5,auto);
+    
+    @media (prefers-reduced-motion: no-preference) {
+      label {
+        transition:  2s var(--ease-spring-5);
+      }
+    }
+    
+    > label {
+      background: var(--_img) 50%/cover;
+      width: 0;
+      min-width: 100%;
+    }
+    > label:has(input:checked) {
+      width: 18vw;
+    }
+    > label:has(input:checked) + *
+    /*> label:has(+ label:has(input:checked)) */{
+      width: 8vw;
+    }
+    /* a hacky way to get all the cases*/
+    &:has(label:nth-child(2) > input:checked) label:nth-child(1),
+    &:has(label:nth-child(3) > input:checked) label:nth-child(2),
+    &:has(label:nth-child(4) > input:checked) label:nth-child(3),
+    &:has(label:nth-child(5) > input:checked) label:nth-child(4){
+      width: 8vw;
+    }
+  }
+}
+
+@layer demo.support {
+ 
+  
+  fieldset {
+    inline-size: 60vw;
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 50vh;
+    gap: var(--size-3);
+    border: none;
+    
+    > label {
+      cursor: pointer;
+      border-radius: var(--radius-4);
+      
+      &:focus-within {
+        outline: 1px solid #ef3f40;
+        outline-offset: 5px;
+      }
+      
+      > input {
+        opacity: 0;
+      }
+    }
+  }
+}</style>
+</head>
+
+<body>
+<fieldset>
+  <label style="--_img: url(https://i.pinimg.com/originals/e4/df/89/e4df893d7a603ecbb05a1d11a5d59ae8.png)">
+    <input type="radio" name="images" value="Fiddle Leaf">
+  </label>
+  <label style="--_img: url(https://i.pinimg.com/736x/fc/d7/90/fcd7906e849c123200403029056612fe.jpg)">
+    <input type="radio" name="images" value="Pink Princess">
+  </label>
+  <label style="--_img: url(https://i.pinimg.com/736x/0e/5f/57/0e5f5791d9e4a022a3cfb632f3963199.jpg)">
+    <input type="radio" name="images" value="Monstera" checked>
+  </label>
+  <label style="--_img: url(https://i.pinimg.com/736x/51/8c/1b/518c1be02f6ed77d67ac471e6e4412a6.jpg)">
+    <input type="radio" name="images" value="Pothos">
+  </label>
+
+</fieldset>
+</body>
+
+</html>
+</div>
+
+
+
+</div>
+
+<div class="wsite-spacer" style="height:17px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:7.0496083550914%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/moeg-circle-logo.png?1692834954" alt="Moeg Circle Logo" style="width:84;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:17.210532267018%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:13px;"></div>
+
+<div class="paragraph" style="text-align:left;"><strong><font color="#99f6e4">Artist Profile:</font></strong><br /><font color="#ffffff">Moeg<br />moeg7801@gmail.com</font></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50.739859377891%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:25%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong><font color="#99f6e4">Label Profile:</font></strong><br /><font color="#ffffff">Morgan Media Creations<br />morgan.craig@gmail.com or&nbsp;<br />morganmediacreations@gmail.com</font></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph" style="text-align:center;"><font color="#ffffff">Powered by Weebly, Built by <a href="https://www.morganmediacreations.com/" target="_blank">Morgan Media Creations</a></font></div>
+
+<div class="wsite-spacer" style="height:50px;"></div></div>
+
+        </div>
+    </div>
+
+   <script>
+    // Parallax Logic
+    const layers = document.querySelectorAll('.layer');
+    const navbar = document.getElementById('navbar');
+    const contentSections = document.querySelectorAll('.content-section');
+
+    function updateParallax() {
+        const scrollY = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        // Update Navigation transparency
+        if (scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+
+        // Move Layers
+        layers.forEach(layer => {
+            const speed = layer.getAttribute('data-speed');
+            if (speed) {
+                const yPos = -(scrollY * speed);
+                layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
+            }
+        });
+
+        // Reveal Content on Scroll
+        contentSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const triggerPoint = windowHeight * 0.8;
+            
+            if (rect.top < triggerPoint) {
+                section.classList.add('visible');
+            }
+        });
+
+        requestAnimationFrame(updateParallax);
+    }
+
+    // Initialize Parallax
+    updateParallax();
+    
+    // Mobile Menu Logic
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const body = document.body;
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+        const isOpen = !mobileMenu.classList.contains('translate-x-full');
+        
+        if (isOpen) {
+            // CLOSING THE MENU
+            mobileMenu.classList.add('translate-x-full');
+            body.classList.remove('menu-open');
+            mobileBtn.classList.remove('hidden'); // Show the menu button again
+        } else {
+            // OPENING THE MENU
+            mobileMenu.classList.remove('translate-x-full');
+            body.classList.add('menu-open');
+            mobileBtn.classList.add('hidden'); // Hide the menu button while menu is open
+        }
+    }
+
+    mobileBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+
+    // Close menu when a link is clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+
+    // Optional: Log a message when the Spotify button is clicked
+    const spotifyBtn = document.getElementById('spotify-btn');
+    if (spotifyBtn) {
+         spotifyBtn.addEventListener('click', () => {
+            console.log('Redirecting to Spotify (simulated)');
+         });
+    }
+</script>
+
+<div style='display:none'><ul class="wsite-menu-default">
+		<li id="pg218365463650632307" class="wsite-menu-item-wrap">
+			<a
+						href="profile.html"
+				class="wsite-menu-item"
+				>
+				Profile
+			</a>
+			
+		</li>
+		<li id="pg235941887652420906" class="wsite-menu-item-wrap">
+			<a
+						href="moeg.html"
+				class="wsite-menu-item"
+				>
+				Moeg
+			</a>
+			
+		</li>
+		<li id="pg897999672552578916" class="wsite-menu-item-wrap">
+			<a
+						href="buy.html"
+				class="wsite-menu-item"
+				>
+				Buy
+			</a>
+			
+		</li>
+		<li id="pg409648072460886258" class="wsite-menu-item-wrap">
+			<a
+						href="breathe.html"
+				class="wsite-menu-item"
+				>
+				Breathe
+			</a>
+			
+		</li>
+</ul>
+</div>
+    
+		
+	</body>
+</html>
